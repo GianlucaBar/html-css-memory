@@ -3,77 +3,92 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* common */
 img{
-    max-width: 100%;
+    width: 100%;
 }
 /* fine common */
+
 body{
     font-family: "Nerko One", Arial, Helvetica, sans-serif;
     background-color: lightskyblue;
 }
 
-h1{
-    font-size: 70px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-}
-
 .container{
-    width: 65%;
+    width: 1200px;
     margin: auto;
 }
 
-/* inizio main  */
+/* inizio header  */
+h1{
+    font-size: 100px;
+    text-align: center;
+    line-height: 160px;
+    color: rgb(255, 255, 255);
+    text-shadow:  4px 4px #0E416B;
+}
+/* fine header  */
 
+/* inizio main  */
+.deck{
+    margin-top: 20px;
+}
 .row{
     text-align: center;
     margin-bottom: 15px;
 }
+
  /* inizio carte  */
 .card{
-    overflow: hidden;
-    border-radius: 10px;
-    height: 250px;
-    width: 220px;
     display: inline-block;
+    border-radius: 10px;
+    height: 300px;
+    width: 20%;
     margin: 10px;
     background-image: url(../img/pattern.png);  /*pattern */
     background-size: contain;
-    position: relative;
     box-shadow: 7px -7px 14px #0e416b, 7px 7px 14px #898989;
-             
-
+    padding: 30px 10px;
+    position: relative;
 }
-.card h3{
-    font-size: 35px;
+.card span{
+    color: rgb(243, 80, 51);
+    text-shadow:  2px 2px 5px #0E416B;
+    font-size: 40px;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
     position: absolute;
-    bottom: 0;
-    
 }
 
-.card img{
-    display: none;
-    padding: 20px 30px;
-}
-.card h3{
+.card *{
     display: none;
 }
+
 .card:hover{
     background-image: none;
     background-color: white;
 }
 
-.card:hover img{
+.card:hover *{
     display: block;
 }
 
-.card:hover h3{
-    display: block;
+.card span:hover{
+    color: rgb(255, 0, 85);
 }
 
-/* .card.active{
-    back
-} */
 /* fine carte  */
+
 /* fine main  */
+
+/* inizio footer  */
+.credits{
+    margin-top: 20px;
+    text-align: center;
+}
+.credits span{
+    font-size: 25px;
+}
+/* fine footer  */
