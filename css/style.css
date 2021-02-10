@@ -3,13 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 /* common */
 img{
-    width: 100%;
+    max-width: 100%;
 }
 /* fine common */
-
 body{
     font-family: "Nerko One", Arial, Helvetica, sans-serif;
     background-color: lightskyblue;
@@ -75,10 +73,18 @@ h1{
     display: block;
 }
 
+
 .card span:hover{
     color: rgb(255, 0, 85);
 }
+.active{
+    background-image: none;
+    background-color: white;
+}
 
+.active *{
+    display: block;
+}
 /* fine carte  */
 
 /* fine main  */
