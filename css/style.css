@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* common */
+img{
+    max-width: 100%;
+}
+/* fine common */
+body{
+    font-family: "Nerko One", Arial, Helvetica, sans-serif;
+    background-color: lightskyblue;
+}
+
+h1{
+    font-size: 70px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.container{
+    width: 65%;
+    margin: auto;
+}
+
+/* inizio main  */
+
+.row{
+    text-align: center;
+    margin-bottom: 15px;
+}
+ /* inizio carte  */
+.card{
+    overflow: hidden;
+    border-radius: 10px;
+    height: 250px;
+    width: 220px;
+    display: inline-block;
+    margin: 10px;
+    background-image: url(../img/pattern.png);  /*pattern */
+    background-size: contain;
+    position: relative;
+    box-shadow: 7px -7px 14px #0e416b, 7px 7px 14px #898989;
+             
+
+}
+.card h3{
+    font-size: 35px;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.card img{
+    display: none;
+    padding: 20px 30px;
+}
+.card h3{
+    display: none;
+}
+.card:hover{
+    background-image: none;
+    background-color: white;
+}
+
+.card:hover img{
+    display: block;
+}
+
+.card:hover h3{
+    display: block;
+}
+
+/* .card.active{
+    back
+} */
+/* fine carte  */
+/* fine main  */
